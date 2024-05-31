@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPhone 15 Website using React.js and Tailwind CSS</title>
+<link rel="stylesheet" href="/assets/built/screen.css?v=537901c77e">
+<link rel="shortcut icon" href="/favicon.png" type="image/png" />
+<link rel="canonical" href="https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<link rel="amphtml" href="https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/amp/" />
+<meta property="og:site_name" content="React.js Examples" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="iPhone 15 Website using React.js and Tailwind CSS" />
+<meta property="og:description" content="this project aims to recreate the Apple iPhone 15 Pro website using React.js and TailwindCSS, with a focus on implementing smooth animations using GSAP" />
+<meta property="og:url" content="https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/" />
+<meta property="og:image" content="https://reactjsexample.com/content/images/2024/03/Code_2024-03_08-56-15.jpg" />
+<meta property="article:published_time" content="2024-03-19T01:07:28.000Z" />
+<meta property="article:modified_time" content="2024-03-19T01:07:28.000Z" />
+<meta property="article:tag" content="WebSite" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="iPhone 15 Website using React.js and Tailwind CSS" />
+<meta name="twitter:description" content="this project aims to recreate the Apple iPhone 15 Pro website using React.js and TailwindCSS, with a focus on implementing smooth animations using GSAP" />
+<meta name="twitter:url" content="https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/" />
+<meta name="twitter:image" content="https://reactjsexample.com/content/images/2024/03/Code_2024-03_08-56-15.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="React" />
+<meta name="twitter:label2" content="Filed under" />
+<meta name="twitter:data2" content="WebSite" />
+<meta property="og:image:width" content="1297" />
+<meta property="og:image:height" content="778" />
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "React.js Examples",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://reactjsexample.com/content/images/2018/01/reactjsexample.png",
+            "width": 259,
+            "height": 55
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "React",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/1f87c1c5e9ccda422d03821987e2cbe5?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://reactjsexample.com/author/react/",
+        "sameAs": []
+    },
+    "headline": "iPhone 15 Website using React.js and Tailwind CSS",
+    "url": "https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/",
+    "datePublished": "2024-03-19T01:07:28.000Z",
+    "dateModified": "2024-03-19T01:07:28.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://reactjsexample.com/content/images/2024/03/Code_2024-03_08-56-15.jpg",
+        "width": 1297,
+        "height": 778
+    },
+    "keywords": "WebSite",
+    "description": "this project aims to recreate the Apple iPhone 15 Pro website using React.js and TailwindCSS, with a focus on implementing smooth animations using GSAP",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://reactjsexample.com/"
+    }
+}
+    </script>
+<script src="/public/ghost-sdk.min.js?v=537901c77e"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "1d7f6785c5cb"
+});
+</script>
+<meta name="generator" content="Ghost 1.26" />
+<link rel="alternate" type="application/rss+xml" title="React.js Examples" href="https://reactjsexample.com/rss/" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PEPW8YGHP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7PEPW8YGHP');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5680150941998747" crossorigin="anonymous"></script>
+</head>
+<body class="post-template tag-website">
+<nav id="navbar" class="navbar is-fixed-top is-transparent" style="
+        transform: translateY(0px);
+      ">
+<div id="specialShadow" class="bd-special-shadow" style="opacity: 0; transform: scaleY(1);"></div>
+<div class="container">
+<div class="navbar-brand">
+<a class="navbar-item" href="https://reactjsexample.com">
+<img src="https://reactjsexample.com/assets/favicon.png" alt=" React.js Examples" width="38" height="38">
+</a>
+<a class="navbar-item " href="https://reactjsexample.com">
+React.js Examples
+</a>
+<div id="navbarBurger" class="navbar-burger burger" data-target="navMenuIndex">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div id="navMenuIndex" class="navbar-menu">
+<div class="navbar-start">
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="/tag/ui/">
+Ui
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="/tag/templates/">Templates</a>
+<a class="navbar-item " href="/tag/material-design/">Material design</a>
+<a class="navbar-item " href="/tag/list/">List</a>
+<a class="navbar-item " href="/tag/cards/">Cards</a>
+<a class="navbar-item " href="/tag/infinite-scroll/">Infinite Scroll</a>
+<a class="navbar-item " href="/tag/bootstrap/">Bootstrap</a>
+<a class="navbar-item " href="/tag/table/">Table</a>
+<a class="navbar-item " href="/tag/layout/">Layout</a>
+<a class="navbar-item " href="/tag/scroll/">Scroll</a>
+<a class="navbar-item " href="/tag/single-page/">Single Page</a>
+<a class="navbar-item " href="/tag/responsive/">Responsive</a>
+<a class="navbar-item " href="/tag/style/">Style</a>
+<a class="navbar-item " href="/tag/admin-template/">Admin Templates</a>
+<a class="navbar-item " href="/tag/ui/">All UI</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="#">
+Media
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="/tag/slides/">Slides</a>
+<a class="navbar-item " href="/tag/slider/">Slider</a>
+<a class="navbar-item " href="/tag/chart/">Chart</a>
+<a class="navbar-item " href="/tag/lightbox/">Lightbox</a>
+<a class="navbar-item " href="/tag/video/">Video</a>
+<a class="navbar-item " href="/tag/gallery/">Gallery</a>
+<a class="navbar-item " href="/tag/carousel/">Carousel</a>
+<a class="navbar-item " href="/tag/images/">Images</a>
+<a class="navbar-item " href="/tag/player/">Player</a>
+<a class="navbar-item " href="/tag/audio/">Audio</a>
+<a class="navbar-item " href="/tag/music/">Music</a>
+<a class="navbar-item " href="/tag/movies/">Movies</a>
+<a class="navbar-item " href="/tag/maps/">Maps</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="#">
+Elements
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="/tag/calculator/">Calculator</a>
+<a class="navbar-item " href="/tag/drag/">Drag</a>
+<a class="navbar-item " href="/tag/tooltip/">Tooltip</a>
+<a class="navbar-item " href="/tag/notifications/">Notifications</a>
+<a class="navbar-item " href="/tag/pagination/">Pagination</a>
+<a class="navbar-item " href="/tag/toggle/">Toggle</a>
+<a class="navbar-item " href="/tag/icons/">Icons</a>
+<a class="navbar-item " href="/tag/emoji/">Emoji</a>
+<a class="navbar-item " href="/tag/progress/">Progress</a>
+<a class="navbar-item " href="/tag/loading/">Loading</a>
+<a class="navbar-item " href="/tag/svg/">Svg</a>
+<a class="navbar-item " href="/tag/accordion/">Accordion</a>
+<a class="navbar-item " href="/tag/modals/">Modals</a>
+<a class="navbar-item " href="/tag/popup/">Popup</a>
+<a class="navbar-item " href="/tag/dialogs/">Dialogs</a>
+<a class="navbar-item " href="/tag/color/">Color </a>
+<a class="navbar-item " href="/tag/clock/">Clock</a>
+<a class="navbar-item " href="/tag/avatar/">Avatar</a>
+<a class="navbar-item " href="/tag/circular/">Circular</a>
+<a class="navbar-item " href="/tag/sticky/">Sticky</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="/tag/input/">
+Input
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="/tag/calendar/">Calendar</a>
+<a class="navbar-item " href="/tag/form/">Form</a>
+<a class="navbar-item " href="/tag/select/">Select</a>
+<a class="navbar-item " href="/tag/date/">Date</a>
+<a class="navbar-item " href="/tag/typography/">Typography</a>
+<a class="navbar-item " href="/tag/textarea/">Textarea</a>
+<a class="navbar-item " href="/tag/message/">Message</a>
+<a class="navbar-item " href="/tag/upload/">Upload</a>
+<a class="navbar-item " href="/tag/notes/">Notes</a>
+<a class="navbar-item " href="/tag/text/">Text</a>
+<a class="navbar-item " href="/tag/search/">Search</a>
+<a class="navbar-item " href="/tag/data/">Data</a>
+<a class="navbar-item " href="/tag/editor/">Editor</a>
+<a class="navbar-item " href="/tag/autocomplete/">Autocomplete</a>
+<a class="navbar-item " href="/tag/inbox/">Inbox</a>
+<a class="navbar-item " href="/tag/time/">Time</a>
+<a class="navbar-item " href="/tag/markdown/">Markdown</a>
+<a class="navbar-item " href="/tag/input/">Input</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="/tag/menu/">
+Menu
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="/tag/dropdown/">Dropdown</a>
+<a class="navbar-item " href="/tag/navbar/">Navbar</a>
+<a class="navbar-item " href="/tag/navigator/">Navigator</a>
+<a class="navbar-item " href="/tag/swipe/">Swipe</a>
+<a class="navbar-item " href="/tag/tabbar/">Tabbar</a>
+<a class="navbar-item " href="/tag/sidebar/">Sidebar</a>
+<a class="navbar-item " href="/tag/intro/">Intro</a>
+<a class="navbar-item " href="/tag/button/">Button</a>
+<a class="navbar-item " href="/tag/tabs/">Tabs</a>
+<a class="navbar-item " href="/tag/drag-drop/">Drag/Drop</a>
+<a class="navbar-item " href="/tag/dock/">Dock</a>
+<a class="navbar-item " href="/tag/fixed/">Fixed</a>
+<a class="navbar-item " href="/tag/tree/">Tree</a>
+<a class="navbar-item " href="/tag/menu/">Menu</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="#">
+More
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="/tag/animation/">Animation</a>
+<a class="navbar-item " href="/tag/games/">Games</a>
+<a class="navbar-item " href="/tag/mobile/">Mobile</a>
+<a class="navbar-item " href="/tag/todo/">Todo</a>
+<a class="navbar-item " href="/tag/vote/">Vote</a>
+<a class="navbar-item " href="/tag/sortable/">Sortable</a>
+<a class="navbar-item " href="/tag/weather/">Weather</a>
+<a class="navbar-item " href="/tag/resizable/">Resizable</a>
+<a class="navbar-item " href="/tag/skillbars/">Skillbars</a>
+<a class="navbar-item " href="/tag/framework/">Framework</a>
+<a class="navbar-item " href="/tag/miscellaneous/">Miscellaneous</a>
+<a class="navbar-item " href="/tag/books/">Books</a>
+<a class="navbar-item " href="/tag/overlay/">Overlay</a>
+</div>
+</div>
+</div>
+<div class="navbar-end">
+<div class="gxx_search" id="bdcs">
+<form action="//www.google.com/search" method="get" target="_blank">
+<input type="search" name="q" value placeholder="Search" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="hidden" name="oe" value="UTF-8" />
+<input type="hidden" name="hl" value="en" />
+<input type="hidden" name="domains" value="reactjsexample.com" />
+<input type="hidden" name="sitesearch" value="reactjsexample.com" />
+<input type="submit" class="gxxicon" value />
+</form>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<section class="ggcontent hidden-xs">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5680150941998747" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:1130px;height:250px" data-ad-client="ca-pub-5680150941998747" data-ad-slot="3755220091"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<div class="site">
+<div class="site-content">
+<div class="container">
+<div class="row">
+<div class="content-column col-xl-9 col-lg-8">
+<div class="content-area">
+<main class="site-main">
+<article class="post tag-website single u-shadow">
+<header class="post-header">
+<a class="post-tag" href="/tag/website/">WebSite</a>
+<h1 class="post-title">
+iPhone 15 Website using React.js and Tailwind CSS
+</h1>
+</header> <div class="post-meta">
+<time class="post-meta-date" datetime="2024-03-19">
+Mar 19, 2024
+</time>
+<span class="post-meta-length">1 min read</span>
+</div>
+<div class="post-media2">
+<div class="u-placeholder">
+<a class="post-image-link" href="/iphone-15-website-using-react-js-and-tailwind-css/">
+<img class="post-image lazyload" data-srcset="/content/images/2024/03/Code_2024-03_08-56-15.jpg 400w, /content/images/2024/03/Code_2024-03_08-56-15.jpg 750w, /content/images/2024/03/Code_2024-03_08-56-15.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="iPhone 15 Website using React.js and Tailwind CSS">
+</a>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="post-content u-text-format">
+<div class="kg-card-markdown"><h2 id="iphone15website">iPhone 15 Website</h2>
+<p>this project aims to recreate the Apple iPhone 15 Pro website using React.js and TailwindCSS, with a focus on implementing smooth animations using GSAP (Greensock Animations) and rendering 3D models of the iPhone 15 Pro in different colors and sizes using Three.js and its related libraries (React Three Fiber and React Three Drei).</p>
+<div class="ct-demo-links">
+<a class="ct-demo-link ct-demo-link--view" href="https://iphone-doc.vercel.app/" target="_blank" rel="nofollow">View Demo</a>
+<a class="ct-demo-link ct-demo-link--download" href="https://github.com/adrianhajdin/iphone" target="_blank" rel="nofollow">View Github</a>
+</div>
+<h2 id="techstack">Tech Stack</h2>
+<ul>
+<li>React.js</li>
+<li>Three.js</li>
+<li>React Three Fiber</li>
+<li>React Three Drei</li>
+<li>GSAP (Greensock)</li>
+<li>Vite</li>
+<li>Tailwind CSS</li>
+</ul>
+<h2 id="features">Features</h2>
+<ol>
+<li><strong>Beautiful Subtle Smooth Animations using GSAP</strong>: Enhancing the user experience with seamless and captivating animations powered by the GSAP library.</li>
+<li><strong>3D Model Rendering with Different Colors and Sizes</strong>: Allowing users to explore the iPhone 15 Pro from various angles with dynamic 3D rendering, offering different color and size options.</li>
+<li><strong>Custom Video Carousel (made with GSAP)</strong>: Engaging users with a unique and interactive video carousel developed using GSAP for a personalized browsing experience.</li>
+<li><strong>Completely Responsive</strong>: Ensuring consistent access and optimal viewing on any device with a fully responsive design that adapts to different screen sizes.</li>
+<li><strong>Code Architecture and Reusability</strong>: Implementing a well-structured and reusable codebase for maintainability and future enhancements.</li>
+</ol>
+</div>
+</div>
+<div class="post-tags">
+<a class="tag tag-website" href="/tag/website/" title="WebSite">WebSite</a>
+</div>
+<div class="share u-hover-wrapper">
+<a class="share-item share-facebook u-hover-item" href="https://www.facebook.com/sharer.php?u=https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/" target="_blank"><i class="icon icon-facebook"></i></a>
+<a class="share-item share-twitter u-hover-item" href="https://twitter.com/intent/tweet?url=https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/&text=iPhone%2015%20Website%20using%20React.js%20and%20Tailwind%20CSS" target="_blank"><i class="icon icon-twitter"></i></a>
+<a class="share-item share-pinterest u-hover-item" href="https://pinterest.com/pin/create/button/?url=https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/&media=&description=iPhone%2015%20Website%20using%20React.js%20and%20Tailwind%20CSS" target="_blank"><i class="icon icon-pinterest"></i></a>
+<a class="share-item share-linkedin u-hover-item" href="https://www.linkedin.com/shareArticle?mini=true&url=https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/&title=iPhone%2015%20Website%20using%20React.js%20and%20Tailwind%20CSS" target="_blank"><i class="icon icon-linkedin"></i></a>
+<a class="share-item share-reddit u-hover-item" href="https://reddit.com/submit?url=https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/&title=iPhone%2015%20Website%20using%20React.js%20and%20Tailwind%20CSS" target="_blank"><i class="icon icon-reddit"></i></a>
+<a class="share-item share-vk u-hover-item" href="http://vk.com/share.php?url=https://reactjsexample.com/iphone-15-website-using-react-js-and-tailwind-css/&title=iPhone%2015%20Website%20using%20React.js%20and%20Tailwind%20CSS" target="_blank"><i class="icon icon-vk"></i></a>
+</div> </div>
+</article>
+<div class="navigation">
+<div class="navigation-item navigation-previous">
+<img class="navigation-image lazyload u-object-fit" data-srcset="/content/images/2024/03/Code_2024-03_09-08-22.jpg 400w, /content/images/2024/03/Code_2024-03_09-08-22.jpg 750w, /content/images/2024/03/Code_2024-03_09-08-22.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="A Simple Indonesian train commuter line schedule app built with Next.js">
+<span class="navigation-label">Previous Post</span>
+<h4 class="navigation-title">A Simple Indonesian train commuter line schedule app built with Next.js</h4>
+<a class="u-permalink" href="/a-simple-indonesian-train-commuter-line-schedule-app-built-with-next-js/"></a>
+</div>
+<div class="navigation-item navigation-next">
+<img class="navigation-image lazyload u-object-fit" data-srcset="/content/images/2024/03/Code_2024-03_22-52-19.jpg 400w, /content/images/2024/03/Code_2024-03_22-52-19.jpg 750w, /content/images/2024/03/Code_2024-03_22-52-19.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="Resume Worth Calculator built with Next.js">
+<span class="navigation-label">Next Post</span>
+<h4 class="navigation-title">Resume Worth Calculator built with Next.js</h4>
+<a class="u-permalink" href="/resume-worth-calculator-built-with-next-js/"></a>
+</div>
+</div>
+<section class="related-posts">
+<h3 class="related-title">
+<span class="text">You might also like...</span>
+</h3>
+<div class="post-feed">
+<article class="post tag-booking tag-templates tag-website u-shadow">
+<div class="post-wrapper">
+<div class="post-media">
+<div class="u-placeholder same-height rectangle">
+<a class="post-image-link" href="/10-best-online-booking-react-templates/">
+<img class="post-image lazyload u-object-fit" data-srcset="/content/images/2024/03/Code_2024-03_23-21-58-1.jpg 400w, /content/images/2024/03/Code_2024-03_23-21-58-1.jpg 750w, /content/images/2024/03/Code_2024-03_23-21-58-1.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="10 Best Online Booking React Templates">
+</a>
+</div>
+</div>
+<div class="post-right">
+<header class="post-header">
+<a class="post-tag" href="/tag/booking/">Booking</a>
+<h2 class="post-title">
+<a class="post-title-link" href="/10-best-online-booking-react-templates/">10 Best Online Booking React Templates</a>
+</h2>
+</header>
+<div class="post-excerpt">
+The best booking React themes are designed to assist you in building a website capable of accepting and managing bookings and reservations online.
+</div>
+<span class="post-card-tags">05 March 2024</span>
+</div>
+</div>
+</article> <article class="post tag-website tag-templates tag-restaurant u-shadow">
+<div class="post-wrapper">
+<div class="post-media">
+<div class="u-placeholder same-height rectangle">
+<a class="post-image-link" href="/10-best-react-restaurant-website-templates/">
+<img class="post-image lazyload u-object-fit" data-srcset="/content/images/2024/03/Code_2024-03_13-04-49-1.jpg 400w, /content/images/2024/03/Code_2024-03_13-04-49-1.jpg 750w, /content/images/2024/03/Code_2024-03_13-04-49-1.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="10 Best React Restaurant Website Templates">
+</a>
+</div>
+</div>
+<div class="post-right">
+<header class="post-header">
+<a class="post-tag" href="/tag/website/">WebSite</a>
+<h2 class="post-title">
+<a class="post-title-link" href="/10-best-react-restaurant-website-templates/">10 Best React Restaurant Website Templates</a>
+</h2>
+</header>
+<div class="post-excerpt">
+In this carefully curated collection, we showcase the top 10 React restaurant website templates for 2024, aiming to simplify the process for restaurant owners and web developers.
+</div>
+<span class="post-card-tags">04 March 2024</span>
+</div>
+</div>
+</article> <article class="post tag-images tag-generator tag-website u-shadow">
+<div class="post-wrapper">
+<div class="post-media">
+<div class="u-placeholder same-height rectangle">
+<a class="post-image-link" href="/alpaca-image-generator-website-built-with-reactjs/">
+<img class="post-image lazyload u-object-fit" data-srcset="/content/images/2024/02/Code_2024-02_17-25-42.jpg 400w, /content/images/2024/02/Code_2024-02_17-25-42.jpg 750w, /content/images/2024/02/Code_2024-02_17-25-42.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="Alpaca image generator website Built with ReactJS">
+</a>
+</div>
+</div>
+<div class="post-right">
+<header class="post-header">
+<a class="post-tag" href="/tag/images/">Images</a>
+<h2 class="post-title">
+<a class="post-title-link" href="/alpaca-image-generator-website-built-with-reactjs/">Alpaca image generator website Built with ReactJS</a>
+</h2>
+</header>
+<div class="post-excerpt">
+Alpaca image generator website Built with ReactJS
+</div>
+<span class="post-card-tags">29 February 2024</span>
+</div>
+</div>
+</article> </div>
+</section>
+<section class="author u-shadow">
+<section class="subscribe-form">
+<h3 class="subscribe-form-title">Subscribe to React.js Examples</h3>
+<p>Get the latest posts delivered right to your inbox</p>
+<form method="post" action="/subscribe/" class>
+<input class="confirm" type="hidden" name="confirm" /><input class="location" type="hidden" name="location" /><input class="referrer" type="hidden" name="referrer" />
+<div class="form-group">
+<input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com" />
+</div>
+<button class type="submit"><span>Subscribe</span></button>
+<script>
+    (function(g,h,o,s,t){
+        var buster = function(b,m) {
+            h[o]('input.'+b).forEach(function (i) {
+                i.value=i.value || m;
+            });
+        };
+        buster('location', g.location.href);
+        buster('referrer', h.referrer);
+    })(window,document,'querySelectorAll','value');
+</script>
+</form>
+</section>
+</section>
+</main>
+</div>
+</div>
+<div class="sidebar-column col-xl-3 col-lg-4 hidden-xs hidden-sm hidden-md">
+<aside class="widget-area">
+<div class="widget widget-facebook widget-no-title u-shadow">
+<div class="fb-page" data-href="__YOUR_FACEBOOK_PAGE_URL__" data-small-header="false" data-hide-cover="false" data-show-facepile="true" data-hide-cta="false" data-tabs="none">
+</div>
+</div> <div class="widget widget-tags u-shadow">
+<div class="gg-card2">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5680150941998747" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5680150941998747" data-ad-slot="9627773903"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div class="widget widget-tags u-shadow">
+<h4 class="widget-title">Tags</h4>
+<div class="tag-feed">
+<div class="tag">
+<a class="tag-link" href="/tag/apps-tag/">
+<span class="tag-name">Apps</span>
+<span class="tag-count">1200</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/typescript/">
+<span class="tag-name">TypeScript</span>
+<span class="tag-count">608</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/nextjs/">
+<span class="tag-name">Nextjs</span>
+<span class="tag-count">417</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/hooks/">
+<span class="tag-name">Hooks</span>
+<span class="tag-count">376</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/website/">
+<span class="tag-name">WebSite</span>
+<span class="tag-count">370</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/ui/">
+<span class="tag-name">UI</span>
+<span class="tag-count">327</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/games/">
+<span class="tag-name">Games</span>
+<span class="tag-count">304</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/tailwind-css/">
+<span class="tag-name">Tailwind CSS</span>
+<span class="tag-count">285</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/javascript/">
+<span class="tag-name">Javascript</span>
+<span class="tag-count">252</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/redux/">
+<span class="tag-name">Redux</span>
+<span class="tag-count">219</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/images/">
+<span class="tag-name">Images</span>
+<span class="tag-count">185</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/todo/">
+<span class="tag-name">Todo</span>
+<span class="tag-count">181</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/ecommerce/">
+<span class="tag-name">Ecommerce</span>
+<span class="tag-count">174</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/starter/">
+<span class="tag-name">Starter</span>
+<span class="tag-count">163</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/state/">
+<span class="tag-name">State</span>
+<span class="tag-count">161</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/editor/">
+<span class="tag-name">Editor</span>
+<span class="tag-count">159</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/templates/">
+<span class="tag-name">Templates</span>
+<span class="tag-count">153</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/api/">
+<span class="tag-name">API</span>
+<span class="tag-count">153</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/tool/">
+<span class="tag-name">Tool</span>
+<span class="tag-count">149</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/animation/">
+<span class="tag-name">Animation</span>
+<span class="tag-count">144</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/miscellaneous/">
+<span class="tag-name">Miscellaneous</span>
+<span class="tag-count">144</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/portfolio-page/">
+<span class="tag-name">Portfolio Page</span>
+<span class="tag-count">144</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/chart/">
+<span class="tag-name">Chart</span>
+<span class="tag-count">139</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/form/">
+<span class="tag-name">Form</span>
+<span class="tag-count">138</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/boilerplate/">
+<span class="tag-name">Boilerplate</span>
+<span class="tag-count">138</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/react-native/">
+<span class="tag-name">React Native</span>
+<span class="tag-count">131</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/generator/">
+<span class="tag-name">Generator</span>
+<span class="tag-count">127</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/chat/">
+<span class="tag-name">Chat</span>
+<span class="tag-count">126</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/calendar/">
+<span class="tag-name">Calendar</span>
+<span class="tag-count">124</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="/tag/firebase/">
+<span class="tag-name">Firebase</span>
+<span class="tag-count">123</span>
+</a>
+</div>
+</div>
+</div> <div class="widget widget-recent u-shadow">
+<h4 class="widget-title">Recent Posts</h4>
+<div class="recent-posts">
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="/drop-in-progressive-gradient-backdrop-blur-for-react/">Drop-in progressive (gradient) backdrop blur for React</a>
+</h5>
+<time class="post-date" datetime="2024-04-25">
+Apr 25, 2024
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="/a-simple-image-to-text-website-built-with-next-js/">A simple Image to text website built with Next.js</a>
+</h5>
+<time class="post-date" datetime="2024-04-18">
+Apr 18, 2024
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="/vortex-a-simple-and-fast-web-application-built-with-next-js/">Vortex - A simple and fast web application built with Next.js</a>
+</h5>
+<time class="post-date" datetime="2024-04-13">
+Apr 13, 2024
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="/a-file-uploader-built-with-shadcn-ui-and-react-dropzone/">A file uploader built with shadcn/ui and react-dropzone</a>
+</h5>
+<time class="post-date" datetime="2024-04-10">
+Apr 10, 2024
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="/react-safe-query-a-lightweight-type-safe-wrapper-built-around-react-query/">React Safe Query - A lightweight, type-safe wrapper built around React Query</a>
+</h5>
+<time class="post-date" datetime="2024-04-07">
+Apr 07, 2024
+</time></header> </article>
+</div>
+</div>
+<div class="widget widget-recent u-shadow">
+<div class="gg-card3">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5680150941998747" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5680150941998747" data-ad-slot="3460995508"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div></aside> </div>
+</div>
+</div>
+<link rel="stylesheet" href="/assets/built/prism.css?v=537901c77e">
+</div>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-inner">
+<div class="copyright ">
+<a href="/about/">About</a>&nbsp; | &nbsp;<a href="/contact/">Contact</a>&nbsp; | &nbsp;<a href="/privacy-policy/">Privacy Policy</a>&nbsp; | &nbsp;<a href="/submit-project/">Submit A Project</a>
+</div>
+<div class="social">
+</div>
+<div class="copyright">
+Powered by <a href="https://reactjsexample.com" target="_blank">React.js Examples</a>
+</div>
+</div>
+</div>
+</footer></div>
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jquery.githubRepoWidget.min.js?v=4882949ed5"></script>
+<script src="/assets/built/main.min.js"></script>
+<script type="text/javascript" src="/assets/js/prism.js?v=4882949ed5"></script>
+<script src="/assets/js/nav.js?v=da972"></script>
+<script data-isso="https://reactjsexample.com/comment" src="https://reactjsexample.com/comment/js/embed.min.js" data-isso-gravatar="true" data-isso-require-author="true" data-isso-require-email="true" data-isso-avatar="false"></script>
+<script type="text/javascript">
+var links = document.querySelectorAll("a");
+for (var i = 0; i < links.length; i++) {
+    if (links[i].hostname != window.location.hostname) {
+        links[i].target = "_blank";
+        links[i].rel = "noopener";
+    }
+}
+</script>
+<script async src="https://umami.reactjsexample.com/script.js" data-website-id="171a8a39-e316-4c11-a3d3-30a623373e1d"></script>
+<script defer data-domain="reactjsexample.com" src="https://stat.reactjsexample.com/js/plausible.js"></script>
+</body>
+</html>
