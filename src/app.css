@@ -1,34 +1,188 @@
+:root {
+  --background-color: #1a1a1a;
+  --text-color: white;
+  --square-background-color: #000000;
+  --square-border-color: #ccc;
+  --square-hover-background-color: lightgray;
+  --status-color: #a7da00;
+  --winning-square-background-color: #a7da00;
+  --winning-square-text-color: #1a1a1a;
+  --button-background-color: #a7da00;
+  --button-text-color: white;
+  --button-disabled-background-color: #ccc;
+  --button-disabled-text-color: #999;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-container {
+  position: fixed; /* Fissa la griglia sulla pagina */
+  top: 50%; /* Posiziona la griglia al centro della pagina */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.square {
+  font-size: 36px;
+  font-weight: bold;
+  width: 80px;
+  height: 80px;
+  background-color: var(--square-background-color);
+  border: 2px solid var(--square-border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  color: var(--text-color);
+  object-position: center;
+}
+
+.square:hover {
+  background-color: var(--square-hover-background-color);
+}
+
+.board-row {
+  display: flex;
+}
+
+.status {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--status-color);
+  font-family: default;
+  margin-top: 20px; /* Increased margin-top */
+}
+
 .game {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-    ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; /* Increased margin-top */
+}
+
+.game-board {
+  margin-bottom: 30px;
+}
+
+.game-info {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.player-inputs {
+  margin-bottom: 20px;
+}
+
+.player-inputs input {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid var(--square-border-color);
+  background-color: var(--square-background-color);
+  color: var(--text-color);
+}
+
+.player-inputs input::placeholder {
+  color: var(--text-color);
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+li button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+li button:hover {
+  background-color: var(--button-background-color);
+}
+
+.player-wins {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.player-wins p {
+  margin: 10px 0;
+  color: white;
+}
+
+@keyframes drawX {
+  0% {
+    transform: scale(0);
   }
-  
-  .game-board {
-    margin-right: 20px;
-    
+  100% {
+    transform: scale(1);
   }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-  }
-  
-  .status {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+}
+
+.square.X {
+  animation: drawX 0.5s ease;
+}
+
+.winning-square {
+  background-color: var(--winning-square-background-color);
+  color: var(--winning-square-text-color);
+  font-weight: bold;
+}
+
+button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:disabled {
+  background-color: var(--button-disabled-background-color);
+  color: var(--button-disabled-text-color);
+  cursor: not-allowed;
+  border-radius: 10px;
+}
+
+
+.player-name-input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  width: 150px; /* Imposta una larghezza fissa per il campo di input del nome del giocatore */
+}
